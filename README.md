@@ -67,6 +67,7 @@ You can change the follow options:
 
 * `maxDepth` number of levels an item can be nested (default `5`)
 * `group` group ID to allow dragging between lists (default `0`)
+* `enableDragAndDrop` drag and drop feature is enable if true (default `true`)
 
 These advanced config options are also available:
 
