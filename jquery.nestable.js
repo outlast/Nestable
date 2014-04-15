@@ -47,7 +47,8 @@
             collapseBtnHTML : '<button data-action="collapse" type="button">Collapse</button>',
             group           : 0,
             maxDepth        : 5,
-            threshold       : 20
+            threshold       : 20,
+			enableDragAndDrop : true
         };
 
     function Plugin(element, options)
@@ -246,6 +247,7 @@
 
         dragStart: function(e)
         {
+			if(this.options.enableDragAndDrop == false) return false;
             var mouse    = this.mouse,
                 target   = $(e.target),
                 dragItem = target.closest(this.options.itemNodeName);
